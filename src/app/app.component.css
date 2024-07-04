@@ -1,0 +1,99 @@
+/* Estilos para la barra de navegación */
+.nav-wrapper {
+    background-color: #B65631; 
+    padding: 10px 20px; 
+    overflow: hidden;
+    backdrop-filter: blur(25px);
+    height: 80px; 
+}
+
+/* Estilos responsivos para la barra de navegación en dispositivos móviles */
+@media (max-width: 712px) {
+    .nav-wrapper {
+        height: 120px; 
+    }
+}
+
+.brand-logo {
+    font-size: 1.8em;
+    font-weight: bold;
+    text-align: center;
+    animation: burn 1.6s infinite alternate; 
+}
+
+/* Estilos responsivos para el logo en dispositivos móviles */
+@media (max-width: 712px) {
+    .brand-logo {
+        font-size: 1.5em; 
+    }
+}
+
+/* Animación burn */
+@keyframes burn {
+    0% {
+        opacity: 1; 
+    }
+    100% {
+        opacity: 0.5; 
+    }
+}
+
+.brand-logo:hover {
+    color: rgb(94, 8, 8);
+}
+
+.emoji {
+    font-size: 50px; 
+    display: inline-block;
+    position: relative; 
+    animation: moveLeft 5s linear infinite; 
+}
+
+/* Animación moveLeft */
+@keyframes moveLeft {
+    0% {
+        left: 100%;
+    }
+    100% {
+        left: 0;
+    }
+}
+
+/* Tamaño de la fuente del emoji para dispositivos móviles */
+@media (max-width: 712px) {
+    .emoji, .building {
+        font-size: 30px; 
+        animation: moveLeft 3s linear infinite; 
+    }
+}
+
+.building {
+    font-size: 50px; 
+    animation: burn 1s infinite alternate; 
+}
+
+/* Estilos para los botones */
+.btn-flat.waves-effect.waves-teal,
+.btn.teal.darken-4.waves-effect.waves-light {
+    background-color: rgb(94, 8, 8);
+    color: white;
+    border: none;
+    padding: 8px 16px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+/* Cambiar el color al pasar el ratón por encima */
+.btn-flat.waves-effect.waves-teal:hover,
+.btn.teal.darken-4.waves-effect.waves-light:hover {
+    background-color: rgba(94, 8, 8, 0.8);
+}
+
+/* Estilos responsivos para los botones */
+@media (max-width: 412px) {
+    .btn-flat.waves-effect.waves-teal,
+    .btn.teal.darken-4.waves-effect.waves-light {
+        padding: 6px 12px;
+        font-size: 14px;
+    }
+}

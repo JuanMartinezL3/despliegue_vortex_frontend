@@ -1,0 +1,44 @@
+/* Estilos personalizados para la tarjeta */
+.custom-card {
+    border-radius: 10px;
+    overflow: hidden;
+    padding: 20px;
+  }
+  
+ 
+  /* Estilos personalizados para el título de la tarjeta */
+  .card-title {
+    font-size: 2.2rem;
+    font-weight: 600;
+    margin-bottom: 30px;
+  }
+  
+  /* Estilos para los campos de entrada */
+  .input-field input[type=text]:focus + label {
+    color: rgb(94, 8, 8) !important;
+  }
+  
+  .input-field input[type=text]:focus {
+    border-bottom: 1px solid rgb(94, 8, 8) !important;
+    box-shadow: 0 1px 0 0 rgb(94, 8, 8) !important;
+  }
+  
+  .input-field .prefix.active {
+    color: rgb(94, 8, 8)0;
+  }
+  
+  /* Aumentar el tamaño de los iconos */
+  .material-icons.prefix {
+    font-size: 2.5rem;
+  }
+  
+  /* Centrar la tarjeta y añadir espaciado */
+  .row {
+    margin-top: 50px;
+  }
+  
+  /* Estilos para los botones */
+  .btn {
+    margin-left: auto;
+    
+  }

@@ -1,0 +1,42 @@
+<div class="row">
+    <div class="col s12 m10 offset-m1 l8 offset-l2">
+        <div class="card z-depth-3 custom-card">
+            <div class="card-content">
+                <span class="card-title center-align" style="color: rgb(94, 8, 8);">Registra un nuevo colaborador</span>
+                <form class="col s12" #colaboradorForm="ngForm" (ngSubmit)="agregarColaborador(colaboradorForm)">
+                    <div class="row">
+                        <div class="input-field col s12">
+                            <i class="material-icons prefix" style="color: rgb(94, 8, 8);">account_circle</i>
+                            <input id="icon_prefix" type="text" name="nombre" #nombre="ngModel" [(ngModel)]="colaboradorService.selectedColaborador.nombre" placeholder="Ingrese el nombre" required>
+                            <label for="icon_prefix">Nombre Completo</label>
+                        </div>
+                        <div class="input-field col s12">
+                            <i class="material-icons prefix" style="color: rgb(94, 8, 8);">code</i>
+                            <input id="icon_group_work" type="text" name="rol" #rol="ngModel" [(ngModel)]="colaboradorService.selectedColaborador.rol" placeholder="Ingrese el rol" required>
+                            <label for="icon_group_work">Rol</label>
+                        </div>
+                        <div class="input-field col s12">
+                            <i class="material-icons prefix" style="color: rgb(94, 8, 8);">devices</i>
+                            <input id="explore_nearby" type="text" name="especialidad" #especialidad="ngModel" [(ngModel)]="colaboradorService.selectedColaborador.especialidad" placeholder="Ingrese la especialidad" required>
+                            <label for="explore_nearby">Especialidad</label>
+                        </div>
+                        <div class="input-field col s12">
+                            <i class="material-icons prefix" style="color: rgb(94, 8, 8);">star_border</i>
+                            <input id="icon_paid" type="text" name="nivel_habilidad" #nivel_habilidad="ngModel" [(ngModel)]="colaboradorService.selectedColaborador.nivel_habilidad" placeholder="Ingrese el nivel de habilidad" required>
+                            <label for="icon_paid">Nivel de habilidad</label>
+                        </div>
+                        <div class="input-field col s12">
+                            <i class="material-icons prefix" style="color: rgb(94, 8, 8);">hourglass_empty</i>
+                            <input id="icon_paid" type="number" name="experiencia" #experiencia="ngModel" [(ngModel)]="colaboradorService.selectedColaborador.experiencia" placeholder="Ingrese los años de experiencia" required>
+                            <label for="icon_paid">Experiencia</label>
+                        </div>
+                    </div>
+                    <div class="card-action right-align">
+                        <button class="btn-flat waves-effect waves-light" type="button" (click)="resetForm(colaboradorForm)" style="color: rgb(94, 8, 8);">Limpiar</button>
+                        <button class="btn waves-effect waves-light" type="submit" style="background-color: rgb(94, 8, 8);">Guardar</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
